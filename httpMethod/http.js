@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('This is About Page');
   }
-  if (req.method === 'GET' && req.url === '/contact') {
+  if (req.method === 'POST') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('This is Contact Page');
   }
